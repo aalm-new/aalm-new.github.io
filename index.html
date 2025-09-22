@@ -2,95 +2,73 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serenity Time Support - ALMA INNOVATIONS LTD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALMA INNOVATIONS LTD</title>
+<meta name="description" content="ALMA INNOVATIONS LTD builds simple, reliable apps that help people focus, relax, and improve daily routines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-  }
-  header {
-    background-color: #003366;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-  }
-  header p {
-    margin: 10px 0 0;
-    font-size: 1.1rem;
-  }
-  .container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  .section {
-    background-color: #fff;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  }
-  .section h2 {
-    margin-top: 0;
-    color: #003366;
-  }
-  .contact-info p {
-    margin: 8px 0;
-  }
-  a {
-    color: #003366;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #003366;
-    color: #fff;
-    font-size: 0.9rem;
-  }
+  :root { --brand:#003366; --ink:#333; --bg:#f5f5f5; --card:#fff; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  header{background:var(--brand);color:#fff;padding:48px 20px;text-align:center}
+  header h1{margin:0 0 8px;font-size:2rem}
+  header p{margin:0;font-size:1.05rem}
+  nav{background:#0b3a73;color:#fff}
+  nav .wrap{max-width:1024px;margin:0 auto;display:flex;gap:16px;flex-wrap:wrap;padding:10px 16px}
+  nav a{color:#fff;text-decoration:none;padding:6px 8px;border-radius:6px}
+  nav a:hover{background:rgba(255,255,255,.15)}
+  main{max-width:1024px;margin:32px auto;padding:0 16px;display:grid;gap:16px;grid-template-columns:1fr}
+  .card{background:var(--card);padding:24px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+  h2{color:var(--brand);margin-top:0}
+  ul.clean{padding-left:18px;margin:8px 0}
+  .grid{display:grid;gap:14px}
+  .grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  footer{background:var(--brand);color:#fff;text-align:center;padding:20px;margin-top:32px}
+  .small{font-size:.95rem}
 </style>
 </head>
 <body>
-  <header>
-    <h1>Serenity Time - Support</h1>
-    <p>Developed by ALMA INNOVATIONS LTD</p>
-  </header>
+<header>
+  <h1>ALMA INNOVATIONS LTD</h1>
+  <p>Simple, reliable apps for focus, wellness, and daily clarity.</p>
+</header>
 
-  <div class="container">
-    <div class="section">
-      <h2>About Serenity Time</h2>
-      <p>Serenity Time is a meditation and wellness app designed to help you reduce stress, improve focus, and build healthier daily routines. 
-      Whether you’re using it for guided meditation, breathing practice, or sleep support, our goal is to make mindfulness accessible to everyone.</p>
-    </div>
-
-    <div class="section">
-      <h2>Need Help?</h2>
-      <p>If you experience any issues, have questions, or want to share feedback, please reach out to our support team. 
-      We aim to respond within 24–48 hours on business days.</p>
-    </div>
-
-    <div class="section contact-info">
-      <h2>Contact Us</h2>
-      <p><strong>Email:</strong> <a href="mailto:support@alma-innovations.com">support@alma-innovations.com</a></p>
-      <p><strong>Company:</strong> ALMA INNOVATIONS LTD</p>
-      <p><strong>Location:</strong> Tel Aviv, Israel</p>
-    </div>
+<nav>
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a href="serenity-time.html">Serenity Time</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
   </div>
+</nav>
 
-  <footer>
-    <p>&copy; 2025 ALMA INNOVATIONS LTD. All rights reserved.</p>
-  </footer>
+<main>
+  <section class="card">
+    <h2>About</h2>
+    <p>We design practical software that helps people reduce stress, stay focused, and build healthy routines. Clear flows, fast performance, and no fluff.</p>
+  </section>
+
+  <section class="card">
+    <h2>Apps and services</h2>
+    <div class="grid grid-2">
+      <div>
+        <h3><a href="serenity-time.html">Serenity Time</a></h3>
+        <p class="small">A clean meditation timer with nature sounds, interval bells, custom backgrounds, and a light price. Start a session in one tap.</p>
+        <p class="small"><a href="serenity-time.html">Learn more →</a></p>
+      </div>
+      <!-- Keep space for more apps -->
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Contact</h2>
+    <p>Email support at <a href="mailto:support@alma-innovations.com">support@alma-innovations.com</a>. We usually respond within 24–48 hours on business days.</p>
+    <p class="small">Company: ALMA INNOVATIONS LTD</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 ALMA INNOVATIONS LTD. All rights reserved.</p>
+</footer>
 </body>
 </html>
-
