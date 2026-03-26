@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioFeedback • Recovery & Readiness from Apple Health</title>
+<meta name="description" content="BioFeedback turns your Apple Health data into a simple daily readiness score. Know when to push hard and when to recover.">
+<meta name="keywords" content="biofeedback,HRV,heart rate variability,readiness,recovery,sleep tracking,training load,Apple Health,Apple Watch,wellness">
+<style>
+  :root { --brand:#003366; --ink:#333; --bg:#f5f5f5; --card:#fff; --cta:#0a66ff; --green:#34c759; --yellow:#ffcc00; --red:#ff3b30 }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  header{background:var(--brand);color:#fff;padding:48px 20px;text-align:center}
+  header h1{margin:0 0 8px;font-size:2rem}
+  header p{margin:0;font-size:1.05rem;opacity:.9}
+  nav{background:#0b3a73;color:#fff}
+  nav .wrap{max-width:1100px;margin:0 auto;display:flex;gap:16px;flex-wrap:wrap;padding:10px 16px}
+  nav a{color:#fff;text-decoration:none;padding:6px 8px;border-radius:6px}
+  nav a:hover{background:rgba(255,255,255,.15)}
+  main{max-width:1100px;margin:32px auto;padding:0 16px;display:grid;gap:16px}
+  .card{background:var(--card);padding:24px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+  h2{color:var(--brand);margin-top:0}
+  .grid{display:grid;gap:14px}
+  .grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .light{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:6px;vertical-align:middle}
+  .light-green{background:var(--green)}
+  .light-yellow{background:var(--yellow)}
+  .light-red{background:var(--red)}
+  .feature-list{list-style:none;padding:0;margin:0}
+  .feature-list li{padding:8px 0;border-bottom:1px solid #eee}
+  .feature-list li:last-child{border:none}
+  .tag{display:inline-block;background:#e8f0fe;color:var(--brand);padding:2px 10px;border-radius:6px;font-size:.85rem;font-weight:600;margin-left:6px}
+  .muted{color:#666;font-size:.95rem}
+  .cta{display:inline-block;background:var(--cta);color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <h1>BioFeedback</h1>
+  <p>Daily readiness and recovery from your Apple Health data</p>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a href="serenity-time.html">Serenity Time</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</nav>
+
+<main>
+  <section class="card">
+    <h2>How it works</h2>
+    <p>BioFeedback reads your Apple Health metrics each morning and gives you a clear readiness signal:</p>
+    <ul style="list-style:none;padding:0">
+      <li><span class="light light-green"></span><strong>Green</strong> &mdash; Time to push harder. Your body is primed for peak performance.</li>
+      <li style="margin-top:8px"><span class="light light-yellow"></span><strong>Yellow</strong> &mdash; Maintain and listen. Focus on technique, not intensity.</li>
+      <li style="margin-top:8px"><span class="light light-red"></span><strong>Red</strong> &mdash; Active recovery day. Rest, mobility, or light walking.</li>
+    </ul>
+    <p class="muted">Your readiness score (0&ndash;100) is calculated from HRV, resting heart rate, sleep quality, and respiratory rate using personalised z-score thresholds &mdash; no generic benchmarks.</p>
+  </section>
+
+  <section class="card">
+    <h2>Key features</h2>
+    <div class="grid grid-3">
+      <div>
+        <h3>Readiness dashboard</h3>
+        <p class="muted">Traffic-light status, readiness score, and metric breakdowns at a glance.</p>
+      </div>
+      <div>
+        <h3>Trends &amp; charts</h3>
+        <p class="muted">7-day and 30-day charts for HRV, resting heart rate, sleep, and overall readiness.</p>
+      </div>
+      <div>
+        <h3>Smart insights</h3>
+        <p class="muted">Plain-language explanations of why your body feels the way it does today.</p>
+      </div>
+      <div>
+        <h3>Subjective check-in</h3>
+        <p class="muted">Log how you feel (wrecked, off, good, on fire) and let the score adapt.</p>
+      </div>
+      <div>
+        <h3>Apple Watch app</h3>
+        <p class="muted">See your readiness status and complications on your wrist.</p>
+      </div>
+      <div>
+        <h3>Widgets</h3>
+        <p class="muted">Home screen and lock screen widgets for instant readiness checks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Pro features</h2>
+    <p>Start with a 14-day free trial. Then choose a plan:</p>
+    <ul class="feature-list">
+      <li>Unlimited history &mdash; track progress over months and years <span class="tag">Pro</span></li>
+      <li>Advanced trends &mdash; longer-term patterns and deeper analysis <span class="tag">Pro</span></li>
+      <li>Data export &mdash; CSV and JSON export of your health data <span class="tag">Pro</span></li>
+      <li>Custom reminders &mdash; pick your own check-in and summary times <span class="tag">Pro</span></li>
+      <li>Weekly summary &mdash; compact recap of recovery, sleep, and readiness <span class="tag">Pro</span></li>
+      <li>Multiple profiles &mdash; track family members or different activities <span class="tag">Pro</span></li>
+    </ul>
+    <p class="muted" style="margin-top:12px">Monthly $2.99 &bull; Annual $19.99 &bull; Lifetime $39.99</p>
+  </section>
+
+  <section class="card">
+    <h2>Privacy first</h2>
+    <p>Your health data is processed entirely on your device. We never see, store, or sell it. <a href="privacy.html">Read our full privacy policy.</a></p>
+  </section>
+
+  <section class="card">
+    <h2>Support</h2>
+    <p>Email: <a href="mailto:support@alma-innovations.com">support@alma-innovations.com</a></p>
+    <p class="muted">Built by ALMA INNOVATIONS LTD.</p>
+  </section>
+</main>
+
+<footer style="text-align:center;background:#003366;color:#fff;padding:18px">
+  &copy; 2025 ALMA INNOVATIONS LTD
+</footer>
+</body>
+</html>
